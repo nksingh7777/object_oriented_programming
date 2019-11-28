@@ -5,8 +5,6 @@ using namespace std;
   
 class Test { 
 public: 
-    //may be since in cpp data type is defined for variable not value, 
-    // it just needs the amount of memory an object requires and thus returns void* pointer to that memory.
     void* operator new(size_t size);
     void operator delete(void*); 
     Test() { cout<<"\n Constructor called"; } 
